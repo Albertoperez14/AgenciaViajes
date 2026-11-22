@@ -1,0 +1,13 @@
+@for(planeta of planetas;track planeta.id){
+    <div>
+        <h2>{{ planeta.emoji }} {{ planeta.nombre }}</h2>
+
+        <p>Distancia: {{ planeta.distancia }}</p>
+
+        <p>Precio: {{ planeta.precio }} créditos</p>
+
+        <a [routerLink]="['/planeta', planeta.id]">
+        Ver planeta
+        </a>
+    </div>
+}

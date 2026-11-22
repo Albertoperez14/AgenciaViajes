@@ -1,0 +1,14 @@
+<p>detalle-planeta works!</p>
+
+@if (planeta){
+    <h1>{{ planeta.emoji }} {{ planeta.nombre }}</h1>
+
+    <p>Distancia: {{ planeta.distancia }}</p>
+
+    <p>Precio: {{ planeta.precio }} créditos</p>
+    <button (click)="comprar()">
+    Comprar billete
+    </button>
+} @else {
+    <h1>Planeta no existe</h1>
+}

@@ -1,0 +1,15 @@
+<h1>Puerta de embarque</h1>
+
+    @if (billete) {
+        <h2>{{ billete.emoji }} {{ billete.nombre }}</h2>
+
+        <p>Distancia: {{ billete.distancia }}</p>
+
+        <p>Precio: {{ billete.precio }} créditos</p>
+
+        <button (click)="despegar()">Despegar</button>
+
+        <button (click)="anularBillete()">Anular billete</button>
+    } @else {
+        <p>No tienes ningún billete comprado.</p>
+    }
